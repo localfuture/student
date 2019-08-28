@@ -1,0 +1,25 @@
+<form (ngSubmit)=onSubmit(f) #f="ngForm">
+  <label>Admission NO:</label>
+  <input type="text" name="admn" class="form-control" ngModel>
+  <button type="submit" class="btn btn-primary" style="float: right">Search</button>
+</form>
+
+<table class="table">
+
+  <tbody>
+    <tr *ngFor="let data of mydata">
+      <td><input class="form-control" type="hidden" name="_id" [(ngModel)]="data._id"></td>
+      <td><input class="form-control" type="text" name="name" [(ngModel)]="data.name"></td>
+      <td><input class="form-control" type="text" name="name" [(ngModel)]="data.roll"></td>
+      <td><input class="form-control" type="text" name="name" [(ngModel)]="data.admn"></td>
+      <td><input class="form-control" type="text" name="name" [(ngModel)]="data.college"></td>
+      <td><input class="form-control" type="text" name="name" [(ngModel)]="data.branch"></td>
+      <td><input class="form-control" type="text" name="name" [(ngModel)]="data.dob"></td>
+      <td><input class="form-control" type="text" name="name" [(ngModel)]="data.email"></td>
+      
+      <td><button class="btn btn-primary" (click)='editbutton()'>Edit</button></td>
+      <td><button class="btn btn-primary" (click)='deletebutton()'>Delete</button></td>
+
+    </tr>
+  </tbody>
+</table>

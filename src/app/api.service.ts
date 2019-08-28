@@ -13,4 +13,20 @@ export class ApiService {
     console.log(data);
     return this.http.post("http://localhost:3000/AddStudent",data);
   }
+
+  viewData(){
+    return this.http.get("http://localhost:3000/viewAllStudents");
+  }
+
+  searchData(data){
+    return this.http.post("http://localhost:3000/searchStudent",data);
+  }
+
+  editData(data){
+    return this.http.post("http://localhost:3000/editStudent",data);
+  }
+
+  deleteData(data){
+    return this.http.post("http://localhost:3000/deleteStudent",data);
+  }
 }

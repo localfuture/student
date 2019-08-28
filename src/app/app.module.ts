@@ -7,11 +7,13 @@ import {Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddStudentComponent } from './add-student/add-student.component';
-import { fromEventPattern } from 'rxjs';
+import { ViewAllStudentsComponent } from './view-all-students/view-all-students.component';
+import { SearchStudentsComponent } from './search-students/search-students.component';
 
 const appRoutes: Routes = [
   {path:'',component: AddStudentComponent},
-  
+  {path:'view',component: ViewAllStudentsComponent},
+  {path:'search',component: SearchStudentsComponent}
   
 ]
 
@@ -19,7 +21,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddStudentComponent
+    AddStudentComponent,
+    ViewAllStudentsComponent,
+    SearchStudentsComponent
   ],
   imports: [
     BrowserModule,
