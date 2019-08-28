@@ -1,0 +1,33 @@
+<div class="container col-md-3">
+  <form (ngSubmit)=onSubmit(f)   #f="ngForm" >
+    <div class="form-group"  >
+      <label>Name</label>
+      <input type="text" class="form-control" name="name" ngModel>
+    </div>
+    <div class="form-group"  >
+      <label>Roll</label>
+      <input type="text" class="form-control" name="roll" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Admin</label>
+      <input type="text" class="form-control" name="admn" ngModel>
+    </div>
+    <div class="form-group">
+      <label>DOB</label>
+      <input type="date" class="form-control" name="dob" ngModel>
+    </div>
+    <div class="form-group">
+      <label>College</label>
+      <input type="text" class="form-control" name="college" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Branch</label>
+      <input type="text" class="form-control" name="branch" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" name="email" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+  </form>
+</div>
